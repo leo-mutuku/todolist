@@ -30,7 +30,7 @@ export default function App() {
  }
 
  /* Looped through each of the todoItem
- *  Here we do not need to use the key 
+ *  Here we do not need to use the key as we assign our todo to a jsx value
  */
  const todo = todoList.map((todoItem)=> <li>{`${todoItem.todoTitle}  ${todoItem.todo}`}</li>)
  
@@ -55,7 +55,7 @@ export default function App() {
 
      <h4>Todo List</h4>
      
-     <ul >{todo}</ul>
+     <ol >{todo}</ol>
     </div>
   );
 }
